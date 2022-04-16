@@ -1,22 +1,22 @@
 import React from "react";
-import blog3Data from "../data/blog3.json";
-import DarkTheme from "../layouts/Dark";
-import Navbar from "../components/Navbar/navbar";
-import BlogGrid from "../components/Blog-grid/blog-grid.jsx";
-import PageHeader from "../components/Page-header/page-header";
-import Footer from "../components/Footer/footer";
-
-
-const BlogGridDark = () => {
+import blog3Data from "../../data/blog3.json";
+import DarkTheme from "../../layouts/Dark";
+import Navbar from "../../components/Navbar/navbar";
+import BlogDetails from "../../components/Blog-details/blog-details";
+import PageHeader from "../../components/Page-header/page-header";
+import Footer from "../../components/Footer/footer";
+import { useRouter } from 'next/router'
+const BlogDetailsDark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
-  // Grabbing Data from the API 
-  const [data,setData] = React.useState();
+  const router = useRouter()
+  const pid = router.query.pid || location.href.split('/')[4]
+  const [data,setData] = React.useState([]);
   const [isLoading, setLoading] = React.useState(false)
+
+
   React.useEffect(() => {
     setLoading(true)
-  
-    
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
@@ -31,18 +31,19 @@ const BlogGridDark = () => {
         navbar.classList.remove("nav-scroll");
       }
     });
-    fetch('https://dev.to/api/articles?username=samcodesign')
+    fetch('https://dev.to/api/articles/'+pid)
     .then((res) => res.json())
     .then((data) => {
       setData(data)
       setLoading(false)
+      console.log(data);
     })
   }, [navbarRef]);
- 
+
   if (isLoading) return <DarkTheme><Navbar nr={navbarRef} lr={logoRef} /> <p>Loading...</p></DarkTheme>
   if (!data) return <DarkTheme><Navbar nr={navbarRef} lr={logoRef} /><p>No profile data</p></DarkTheme>
 
-  return   (
+  return (
     <DarkTheme>
       <div className="circle-bg">
         <div className="circle-color fixed">
@@ -52,14 +53,13 @@ const BlogGridDark = () => {
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
       <PageHeader
-        title="Our News."
+        title={"Blog Post"}
         paragraph="All the most current news and events of our creative team."
       />
-      <BlogGrid blogs={data} />
-      <Footer />
-      <script src="/common/displayRows.js"></script>
+          <BlogDetails blog={"blog"} post={data} />
+          <Footer />
     </DarkTheme>
   );
 };
 
-export default BlogGridDark;
+export default BlogDetailsDark;
