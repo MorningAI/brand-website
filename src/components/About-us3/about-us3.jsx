@@ -32,8 +32,8 @@ const AboutUs3 = () => {
                       />
                     </div>
                     <div className="exp">
-                      <h2 className="nmb-font">{AboutUs3date.exp.nmb}</h2>
-                      <h6>{AboutUs3date.exp.name}</h6>
+                      <h2 className="nmb-font">+{AboutUs3date.exp.nmb}</h2>
+                      <h6>Satisfied Clients</h6>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const AboutUs3 = () => {
                   {AboutUs3date.content.second}
                 </p>
               </Split>
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about`}>
                 <a
                   className="butn bord curve mt-40 wow fadeInUp"
                   data-wow-delay=".8s"
