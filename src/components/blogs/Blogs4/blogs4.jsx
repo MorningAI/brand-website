@@ -20,18 +20,27 @@ SwiperCore.use([Navigation, Pagination, Parallax, EffectFade]);
 
 const Blogs4 = () => {
   const [load, setLoad] = React.useState(true);
+  const [data,setData] = React.useState();
+  const [isLoading, setLoading] = React.useState(false);
   React.useEffect(() => {
     setTimeout(() => {
       setLoad(false);
       removeSlashFromPagination();
       thumparallax();
     }, 1000);
+    fetch('https://dev.to/api/articles?username=samcodesign')
+    .then((res) => res.json())
+    .then((data) => {
+      setData(data)
+      setLoading(false)
+    })
   }, []);
 
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   const paginationRef = React.useRef(null);
-
+  if (isLoading) return <section> <p>Loading...</p></section>
+  if (!data) return <section><p>No profile data</p></section>
   return (
     <section className="blog-crv sub-bg">
       <h2 style={{ display: "none" }}>&nbsp;</h2>
@@ -88,39 +97,20 @@ const Blogs4 = () => {
                   className="swiper-wrapper swiper-container swiper-img"
                   slidesPerView={1}
                 >
-                  <SwiperSlide className="swiper-slide">
+                  {data.map(blogItem=>(
+                    <SwiperSlide className="swiper-slide">
                     <div className="item wow fadeIn" data-wow-delay=".3s">
                       <div className="img">
                         <img
                           className="thumparallax"
-                          src="/img/blog/1.jpg"
+                          src={blogItem.cover_image}
                           alt=""
                         />
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="item wow fadeIn" data-wow-delay=".3s">
-                      <div className="img">
-                        <img
-                          className="thumparallax"
-                          src="/img/blog/2.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="item wow fadeIn" data-wow-delay=".3s">
-                      <div className="img">
-                        <img
-                          className="thumparallax"
-                          src="/img/blog/3.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                  ))}
+                 
                 </Swiper>
               ) : null}
             </div>
@@ -172,118 +162,46 @@ const Blogs4 = () => {
                   className="swiper-wrapper swiper-container swiper-content"
                   slidesPerView={1}
                 >
-                  <SwiperSlide className="swiper-slide">
-                    <div className="item wow fadeIn" data-wow-delay=".6s">
-                      <div className="content">
-                        <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
-                        </div>
-                        <div className="info">
-                          <Link href="/blog/blog-dark">
-                            <a>
-                              <i className="far fa-clock"></i>
-                              06 Aug 2022
-                            </a>
-                          </Link>
-                          <a href="#0">by Alex Morgan</a>
-                        </div>
-                        <div className="title">
-                          <h4>
-                            <Link href="/blog-details/blog-details-dark">
-                              Create The Lifestyle You Really Desire This World
-                            </Link>
-                          </h4>
-                        </div>
-                        <div className="text">
-                          <p>
-                            Success is no accident. It is hard work,
-                            perseverance, learning, studying, sacrifice and most
-                            of all, love of what you are doing.
-                          </p>
-                        </div>
-                        <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="item wow fadeIn" data-wow-delay=".6s">
-                      <div className="content">
-                        <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
-                        </div>
-                        <div className="info">
-                          <Link href="/blog/blog-dark">
-                            <a>
-                              <i className="far fa-clock"></i>
-                              06 Aug 2022
-                            </a>
-                          </Link>
-                          <a href="#0">by Alex Morgan</a>
-                        </div>
-                        <div className="title">
-                          <h4>
-                            <Link href="/blog-details/blog-details-dark">
-                              <a>List of The Best Investment Projects</a>
-                            </Link>
-                          </h4>
-                        </div>
-                        <div className="text">
-                          <p>
-                            Success is no accident. It is hard work,
-                            perseverance, learning, studying, sacrifice and most
-                            of all, love of what you are doing.
-                          </p>
-                        </div>
-                        <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="item wow fadeIn" data-wow-delay=".6s">
-                      <div className="content">
-                        <div className="tags">
-                          <Link href="/blog/blog-dark">Trending</Link>
-                        </div>
-                        <div className="info">
-                          <Link href="/blog/blog-dark">
-                            <a>
-                              <i className="far fa-clock"></i>
-                              06 Aug 2022
-                            </a>
-                          </Link>
-                          <a href="#0">by Alex Morgan</a>
-                        </div>
-                        <div className="title">
-                          <h4>
-                            <Link href="/blog-details/blog-details-dark">
-                              <a>World Best Business Website Company</a>
-                            </Link>
-                          </h4>
-                        </div>
-                        <div className="text">
-                          <p>
-                            Success is no accident. It is hard work,
-                            perseverance, learning, studying, sacrifice and most
-                            of all, love of what you are doing.
-                          </p>
-                        </div>
-                        <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                 {data.map((blogItem)=>(
+                   <SwiperSlide className="swiper-slide">
+                   <div className="item wow fadeIn" data-wow-delay=".6s">
+                     <div className="content">
+                       <div className="tags">
+                         <Link href={"/posts/"+blogItem.id}>{blogItem.tag_list.join(' ')}</Link>
+                       </div>
+                       <div className="info">
+                         <Link href={"/posts/"+blogItem.id}>
+                           <a>
+                             <i className="far fa-clock"></i>
+                            {new Date(blogItem.published_at).toDateString()}
+                           </a>
+                         </Link>
+                         <a href="#0">by {blogItem.user.name}</a>
+                       </div>
+                       <div className="title">
+                         <h4>
+                           <Link href={"/posts/"+blogItem.id}>
+                             {blogItem.title}
+                           </Link>
+                         </h4>
+                       </div>
+                       <div className="text">
+                         <p>
+                           {blogItem.description}
+                         </p>
+                       </div>
+                       <div className="more">
+                         <Link href={"/posts/"+blogItem.id}>
+                           Read More
+                         </Link>
+                       </div>
+                     </div>
+                   </div>
+                 </SwiperSlide>
+                 ))}
                 </Swiper>
+             
+                
               ) : null}
             </div>
           </div>

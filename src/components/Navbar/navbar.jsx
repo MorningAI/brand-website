@@ -64,36 +64,19 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">About</a>
               </Link>
             </li>
-            <li className="nav-item dropdown" onClick={handleDropdown}>
+            <li className="nav-item " >
               <span
-                className="nav-link dropdown-toggle"
+                className="nav-link "
                 data-toggle="dropdown"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
+                <Link href={"/our-projects"}>
                 Works
+                </Link>
               </span>
-              <div className="dropdown-menu">
-                <Link href={`/showcase/showcase-dark`}>
-                  <a className="dropdown-item">Showcase Parallax</a>
-                </Link>
-                <Link href={`/showcase4/showcase4-dark`}>
-                  <a className="dropdown-item">Showcase Carousel</a>
-                </Link>
-                <Link href={`/showcase3/showcase3-dark`}>
-                  <a className="dropdown-item">Showcase Circle</a>
-                </Link>
-                <Link href={`/works/works-dark`}>
-                  <a className="dropdown-item">Portfolio Masonry</a>
-                </Link>
-                <Link href={`/works2/works2-dark`}>
-                  <a className="dropdown-item">Portfolio Filtering</a>
-                </Link>
-                <Link href={`/works3/works3-dark`}>
-                  <a className="dropdown-item">Portfolio Gallery</a>
-                </Link>
-              </div>
+              
             </li>
             <li className="nav-item dropdown" >
               <span

@@ -64,33 +64,7 @@ const BlogDetails = ({ theme,post }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="author">
-                      <div className="author-img">
-                        <img src="/img/blog/01.jpg" alt="" />
-                      </div>
-                      <div className="info">
-                        <h6>
-                          <span>author :</span> Jorden Griffin
-                        </h6>
-                        <p>
-                          the main component of a healthy environment for self
-                          esteem is that it needs be nurturing. The main compont
-                          of a healthy environment.
-                        </p>
-                        <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-behance"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                      </div>
                 </div>
               </div>
 

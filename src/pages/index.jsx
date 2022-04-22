@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar/navbar";
-import FullTestimonials from "../components/Full-testimonials/full-testimonials";
 import CallToAction from "../components/Call-to-action/call-to-action";
 import Footer from "../components/Footer/footer";
 import Team from "../components/Team/team";
@@ -39,7 +38,6 @@ const Homepage5 = () => {
       <Works3 />
       <Services3 />
       <MinimalArea2 />
-      <FullTestimonials classText="pb-0" />
       <Team />
       <Blogs4 />
       <CallToAction />

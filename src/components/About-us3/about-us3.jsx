@@ -20,13 +20,13 @@ const AboutUs3 = () => {
             <div className="imgsec md-mb50">
               <div className="row">
                 <div className="col-md-6">
-                  <div className="item">
+                  <div className="item ">
                     <div
-                      className="imgone big-bord wow fadeInDown"
+                      className="imgone big-bord wow fadeInDown bordered15"
                       data-wow-delay=".8s"
                     >
                       <img
-                        className="thumparallax-down"
+                        className="thumparallax-down "
                         src={AboutUs3date.image1}
                         alt=""
                       />

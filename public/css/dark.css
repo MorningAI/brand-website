@@ -1116,6 +1116,7 @@ span:hover {
   text-transform: uppercase;
   letter-spacing: 10px;
   z-index: 9999999999;
+  display: none;
 }
 
 .loading.isdone {
@@ -9227,4 +9228,8 @@ section.next-prog.section-padding {
   a.col-md-12.popimg {
     padding: 0;
   }
+}
+
+.link-is-active{
+  color: #059dff; 
 }

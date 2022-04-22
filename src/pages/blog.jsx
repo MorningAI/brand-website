@@ -1,5 +1,4 @@
 import React from "react";
-import blog3Data from "../data/blog3.json";
 import DarkTheme from "../layouts/Dark";
 import Navbar from "../components/Navbar/navbar";
 import BlogGrid from "../components/Blog-grid/blog-grid.jsx";

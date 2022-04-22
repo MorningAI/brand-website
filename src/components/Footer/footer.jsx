@@ -2,8 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
+import { useRouter } from 'next/router'
 
 const Footer = ({ hideBGCOLOR }) => {
+  const router = useRouter()
+  console.log(router.pathname.split("/"));
   return (
     <footer className={`${!hideBGCOLOR ? "sub-bg" : ""}`}>
       <div className="container">
@@ -41,63 +44,20 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Recent News</h5>
+                <h5>Sitemap</h5>
               </div>
               <ul>
-                <li>
-                  <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/1.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
-                      </a>
-                    </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
-                      </a>
-                    </Link>
-                  </div>
+                <li  className={router.pathname == "/" ? "link-is-active" : ""}>
+                 <a href="/">Home</a>
                 </li>
-                <li>
-                  <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/2.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
-                      </a>
-                    </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
-                      </a>
-                    </Link>
-                  </div>
+                <li className={router.pathname == "/about" ? "link-is-active" : ""}>
+                  <a href="/about">About</a>
                 </li>
-                <li>
-                  <div className="subscribe">
-                    <input type="text" placeholder="Type Your Email" />
-                    <span className="subs pe-7s-paper-plane"></span>
-                  </div>
+                <li className={router.pathname == "/our-projects" ? "link-is-active" : ""}>
+                <a href="/our-projects">Works</a>
                 </li>
+                <li className={router.pathname == "/blog" ? "link-is-active" : ""}><a href="/blog">Blog</a></li>
+                <li className={router.pathname == "/contact" ? "link-is-active" : ""}><a href="/contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -136,6 +96,7 @@ const Footer = ({ hideBGCOLOR }) => {
           </div>
         </div>
       </div>
+    
     </footer>
   );
 };

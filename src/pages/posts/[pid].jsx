@@ -1,5 +1,4 @@
 import React from "react";
-import blog3Data from "../../data/blog3.json";
 import DarkTheme from "../../layouts/Dark";
 import Navbar from "../../components/Navbar/navbar";
 import BlogDetails from "../../components/Blog-details/blog-details";
@@ -10,7 +9,7 @@ const BlogDetailsDark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
   const router = useRouter()
-  const pid = router.query.pid || location.href.split('/')[4]
+  const pid = router.query.pid 
   const [data,setData] = React.useState([]);
   const [isLoading, setLoading] = React.useState(false)
 
