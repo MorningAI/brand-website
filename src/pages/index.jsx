@@ -10,7 +10,8 @@ import Intro4 from "../components/Intro4/intro4";
 import AboutUs3 from "../components/About-us3/about-us3";
 import Services3 from "../components/Services3/services3";
 import MinimalArea2 from "../components/Minimal-Area2/minimal-area2";
-
+import Sound from 'react-sound';
+import loseYourself from '../data/backgroundSound.mp3';
 const Homepage5 = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
@@ -32,8 +33,9 @@ const Homepage5 = () => {
   }, [navbarRef]);
   return (
     <LightTheme>
+      <Sound url={loseYourself} playStatus={Sound.status.PLAYING} playFromPosition={0} loop={true} />
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
-      <Intro4 blackStar />
+      <Intro4  />
       <AboutUs3 />
       <Works3 />
       <Services3 />

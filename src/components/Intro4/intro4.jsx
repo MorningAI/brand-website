@@ -6,7 +6,7 @@ import Particles from "react-tsparticles";
 const Intro4 = ({ sliderRef, blackStar }) => {
   return (
     <header ref={sliderRef} className="particles circle-bg valign">
-      <div className="container">
+      <div className="container" style={{zIndex:100}}>
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="cont text-center">
@@ -19,11 +19,11 @@ const Intro4 = ({ sliderRef, blackStar }) => {
         </div>
       </div>
 
+
       <Particles
         id="particles-js"
         options={blackStar ? particlesBlackConfig : particlesConfig}
       />
-
         <div className="gradient-circle"></div>
         <div className="gradient-circle two"></div>
       <div className="line bottom left"></div>

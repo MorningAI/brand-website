@@ -151,17 +151,9 @@ span:hover {
 }
 
 .color-font {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
-  );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -177,7 +169,7 @@ span:hover {
   );
   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to left, #1488cc, #2b32b2);
 }
 
 .line {
@@ -1596,7 +1588,7 @@ body {
   );
   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
   padding: 7px 12px;
   border-radius: 10px;
 }
@@ -1927,7 +1919,7 @@ body {
 }
 
 .navbar .logo {
-  width: 50px;
+  width: 40px;
 }
 
 .nav-scroll {
@@ -4056,7 +4048,7 @@ body {
   );
   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background:  linear-gradient(to left, #1488cc, #2b32b2);
   z-index: -2;
 }
 
@@ -4631,7 +4623,7 @@ body {
   );
   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to left, #1488cc, #2b32b2);
   z-index: -2;
   opacity: 0;
   -webkit-transition: all 0.4s;
@@ -6189,7 +6181,7 @@ body {
   );
   background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
   background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to left, #1488cc, #2b32b2);
   -webkit-transition: all 1.5s;
   -o-transition: all 1.5s;
   transition: all 1.5s;
@@ -8527,6 +8519,9 @@ footer .item .copy-right p a {
   .next-prog .box .caption h1,
   .next-prog .box .copy-cap h1 {
     font-size: 40px;
+  }
+  #particles-js{
+    width: fit-content;
   }
 }
 

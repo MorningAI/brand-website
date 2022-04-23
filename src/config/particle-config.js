@@ -1,112 +1,112 @@
-const particlesConfig = {
-  particles: {
-    number: {
-      value: 130,
-      density: {
-        enable: true,
-        value_area: 900,
-      },
+const particlesConfig = JSON.parse(`{
+  "background": {
+    "color": {
+      "value": "transparent"
     },
-    color: {
-      value: "#ffffff",
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-      polygon: {
-        nb_sides: 5,
-      },
-      image: {
-        src: "/img/github.svg",
-        width: 100,
-        height: 100,
-      },
-    },
-    opacity: {
-      value: 0.2,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.3,
-        sync: false,
-      },
-    },
-    size: {
-      value: 1.8,
-      random: true,
-      anim: {
-        enable: false,
-        speed: 4,
-        size_min: 0.4,
-        sync: false,
-      },
-    },
-    line_linked: {
-      enable: false,
-      distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 600,
-      },
-    },
+    "image": "url('/img/nyancat-animated.gif')",
+    "position": "-30% 85%",
+    "repeat": "no-repeat",
+    "size": "60%"
   },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "bubble",
-      },
-      onclick: {
-        enable: true,
-        mode: "repulse",
-      },
-      resize: true,
-    },
-    modes: {
-      grab: {
-        distance: 400,
-        line_linked: {
-          opacity: 1,
-        },
-      },
-      bubble: {
-        distance: 250,
-        size: 0,
-        duration: 2,
-        opacity: 0,
-        speed: 3,
-      },
-      repulse: {
-        distance: 400,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-      remove: {
-        particles_nb: 2,
-      },
-    },
+  "fullScreen": {
+    "zIndex": 1
   },
-  retina_detect: true,
-};
-
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onHover": {
+        "mode": "grab"
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 400,
+        "duration": 2,
+        "opacity": 8,
+        "size": 40,
+        "divs": {
+          "distance": 200,
+          "duration": 0.4,
+          "mix": false,
+          "selectors": []
+        }
+      },
+      "grab": {
+        "distance": 200
+      },
+      "repulse": {
+        "divs": {
+          "distance": 200,
+          "duration": 0.4,
+          "factor": 100,
+          "speed": 1,
+          "maxSpeed": 50,
+          "easing": "ease-out-quad",
+          "selectors": []
+        }
+      }
+    }
+  },
+  "particles": {
+    "color": {
+      "value": "#000"
+    },
+    "links": {
+      "color": {
+        "value": "#000"
+      },
+      "distance": 150,
+      "opacity": 0.4
+    },
+    "move": {
+      "attract": {
+        "rotate": {
+          "x": 600,
+          "y": 1200
+        }
+      },
+      "direction": "left",
+      "enable": true,
+      "outModes": {
+        "bottom": "out",
+        "left": "out",
+        "right": "out",
+        "top": "out"
+      },
+      "speed": 6,
+      "straight": true
+    },
+    "opacity": {
+      "value": 0.5,
+      "animation": {
+        "speed": 1,
+        "minimumValue": 0.1
+      }
+    },
+    "shape": {
+      "options": {
+        "star": {
+          "sides": 5
+        }
+      },
+      "type": "star"
+    },
+    "size": {
+      "random": {
+        "enable": true
+      },
+      "value": {
+        "min": 1,
+        "max": 4
+      },
+      "animation": {
+        "speed": 40,
+        "minimumValue": 0.1
+      }
+    }
+  }
+}`)
 export default particlesConfig;
