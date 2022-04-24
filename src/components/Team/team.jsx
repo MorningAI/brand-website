@@ -18,17 +18,16 @@ const Team = () => {
           <div className="col-lg-5 valign">
             <div className="content wow fadeInUp md-mb30" data-wow-delay=".5s">
               <div className="sub-title">
-                <h6>Our Staff</h6>
+                <h6>Our Team</h6>
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
               <h3 className="co-tit mb-15">
-                We help to create visual strategies.
+                We help to create digital solutions.
               </h3>
               <p>
-                We are Vie. We create award-winning websites, remarkable brands
-                and cutting-edge apps.Nullam imperdie.
+                We are Morning AI. Our job is our passion. We are a team of creatives working to build a better tomorrow!
               </p>
               <div className="skills-box mt-40">
                 {teamsDate.skills.map((skill) => (

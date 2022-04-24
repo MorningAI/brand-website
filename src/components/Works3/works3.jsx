@@ -26,10 +26,10 @@ const Works3 = () => {
             <div className="col-lg-8 col-md-10">
               <div className="sec-head">
                 <h6 className="wow fadeIn" data-wow-delay=".5s">
-                  Portfolio
+                  Our Work
                 </h6>
                 <h3 className="wow color-font">
-                  Our Recent Web Design &amp; <br /> Some Past Projects.
+                  Our Recent Projects <br/> Seeking for a better tomorrow.
                 </h3>
               </div>
             </div>

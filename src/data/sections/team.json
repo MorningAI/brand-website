@@ -3,38 +3,53 @@
     {
       "id": 1,
       "image": "/img/team/1.jpg",
-      "title": "Stephanie Lawrence",
-      "sub": "CEO, Colabrio Media"
+      "title": "Samy Benmahrez",
+      "sub": "President/ Product Designer, Morning AI"
     },
     {
       "id": 2,
       "image": "/img/team/2.jpg",
-      "title": "Alex Regelman",
-      "sub": "CEO, Colabrio Media"
+      "title": "Mohamed Aissaoui",
+      "sub": "Vice President/Marketing Director, Morning AI"
     },
     {
       "id": 3,
       "image": "/img/team/3.jpg",
-      "title": "Stacey Stamper",
-      "sub": "CEO, Colabrio Media"
+      "title": "Yasser Cherfaoui",
+      "sub": "Development Section Lead, Morning AI"
     },
     {
       "id": 4,
       "image": "/img/team/4.jpg",
-      "title": "Stephanie Lawrence",
-      "sub": "CEO, Colabrio Media"
+      "title": "Youcef Khalef",
+      "sub": "Design Section Lead, Morning AI"
     }
   ],
   "skills": [
     {
       "id": 1,
       "text": "UI / UX Design",
+      "value": "95%"
+    },
+    {
+      "id": 1,
+      "text": "Graphic Design",
+      "value": "85%"
+    },
+    {
+      "id": 2,
+      "text": "Software Development",
+      "value": "80%"
+    },
+    {
+      "id": 1,
+      "text": "Brand Strategy",
       "value": "90%"
     },
     {
       "id": 2,
-      "text": "Apps Development",
-      "value": "80%"
+      "text": "Digital Marketing",
+      "value": "65%"
     }
   ]
 }

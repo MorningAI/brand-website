@@ -25,24 +25,22 @@ const MinimalArea2 = () => {
           </div>
           <div className="col-lg-6 valign">
             <div className="content">
-              <h4 className="color-font">Dream. Innovate. Implement.</h4>
+              <h4 className="color-font">Imgine. Plannify. Create.</h4>
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  Our creative Ad agency is ranked among the finest in the US.
-                  We cultivate smart ideas for start-ups and seasoned players.
-                  By adhering to industry standards, we create some stunning
-                  portfolios. Company branding redefines.
+                We help companies integrate smart and creative solutions into their businesses. 
+                Big companies trust us because of our professional work and our great services.
                 </p>
               </Split>
               <ul>
                 <li className="wow fadeInUp" data-wow-delay=".2s">
-                  We provide free initial consultation and support.
+                  We provide free initial support.
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
-                  We work with some of the most successful businesses.
+                  We work with successful businesses.
                 </li>
               </ul>
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about/`}>
                 <a
                   className="butn bord curve mt-40 wow fadeInUp"
                   data-wow-delay=".8s"

@@ -1,5 +1,5 @@
 import React from "react";
-import particlesConfig from "../../config/particle-config";
+import particlesConfig from "../../config/pr-s-black";
 import particlesBlackConfig from "../../config/pr-s-black";
 import Particles from "react-tsparticles";
 import ContentHeaderDate from "../../data/sections/contact-header.json";

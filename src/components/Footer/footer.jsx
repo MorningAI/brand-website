@@ -68,26 +68,23 @@ const Footer = ({ hideBGCOLOR }) => {
               </div>
               <div className="social">
                 <a href="#0">
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
                 <a href="#0">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#0">
+                <a href="https://www.instagram.com/morning_ai_">
                   <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#0">
-                  <i className="fab fa-youtube"></i>
                 </a>
               </div>
               <div className="copy-right">
                 <p>
-                  © 2022, Vie Template. Made with passion by
+                  © 2022 Made with <i class="icon ion-heart"></i> By Our Team at 
                   <Link
-                    href="https://themeforest.net/user/themescamp/portfolio"
+                    href=""
                     
                   >
-                    <a target="_blank">ThemesCamp</a>
+                    <a target="_blank"> Morning AI </a>
                   </Link>
                   .
                 </p>

@@ -27,7 +27,7 @@ const MinimalArea = () => {
             <div className="content pt-0">
               <h4 className="wow color-font">About us.</h4>
               <p className="wow txt" data-splitting>
-                Our creative Ad agency is ranked among the finest in the US. We
+                Our creative team are hardworkers. We
                 cultivate smart ideas for start-ups and seasoned players.
               </p>
               <ul className="feat">
@@ -36,7 +36,7 @@ const MinimalArea = () => {
                     <span>1</span> Our Mission
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    Help companies integrate AI-powered solutions into their businesses.
                   </p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
@@ -44,7 +44,7 @@ const MinimalArea = () => {
                     <span>2</span> Our Goals
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    Use creative problem solving and critical thinking to help you grow in the connected world.
                   </p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
@@ -52,7 +52,9 @@ const MinimalArea = () => {
                     <span>3</span> Why Us?
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    Our job is our passion.
+                    Our team can support projects of all sizes across a wide range of sectors.
+                    We provide creativity, performance, a good user experience, and security.
                   </p>
                 </li>
               </ul>

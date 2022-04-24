@@ -13,7 +13,7 @@ const Services3 = () => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Best Services
+                Our Areas of Expertise
               </h6>
               <h3 className="wow color-font">
                 We help to create strategies, design &amp; development.
@@ -25,14 +25,13 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items md-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-monitor"></i>
+                <i className="pe-7s-light"></i>
               </span>
-              <h5>Interface Design</h5>
+              <h5>Creative always</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+              Creativity can solve almost any problem. Imagine what you desire, our team will create it!
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about/">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -42,14 +41,13 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items active md-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-bolt-outline"></i>
+                <i className="pe-7s-display1"></i>
               </span>
-              <h5>Creative Always</h5>
+              <h5>Branding strategy</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+              Let us create a strong and positive perception of your company, it is more than just a logo! 
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about/">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -59,14 +57,13 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items sm-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-cube"></i>
+                <i className="pe-7s-monitor"></i>
               </span>
-              <h5>Real-time Editing</h5>
+              <h5>Software development</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+              Plan tailored software solutions for you to achieve operational excellence and deliver them fast and error-free. 
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about/">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -76,14 +73,13 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-color-wand"></i>
+                <i className="pe-7s-browser"></i>
               </span>
-              <h5>Art Concept</h5>
+              <h5>Interface design</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+              Our UI/UX experts will work with you to create a design that matches your brand while giving your customers a seamless user experience that will delight them.
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about/">
                 <a className="more-stroke">
                   <span></span>
                 </a>

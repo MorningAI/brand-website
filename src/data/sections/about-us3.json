@@ -3,13 +3,13 @@
   "image1": "/img/01.jpg",
   "image2": "/img/02.jpg",
   "exp": {
-    "nmb": 28,
-    "name": "Years Of Experience"
+    "nmb": 8,
+    "name": "Drawn Smiles"
   },
   "title": { "first": "Unlimited Skills", "second": "for Super Projects." },
   "content": {
-    "first": "Branding is no longer simply about visual appeal (or the cherry in the apple pie example, as given in my earlier article).",
-    "second": "We develop creative solutions for small and big brands alike, build authentic product identities and much more."
+    "first": "Creative ideas do not suddenly appear in people’s minds. Our team will define the process that can help your company from the problem definition to implementing solutions! ",
+    "second": "We develop creative solutions for small and big brands alike, software development, brand strategy and much more."
   },
   "smallTitle": "About Us"
 }
