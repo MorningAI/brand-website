@@ -23,6 +23,18 @@
       "image": "/img/team/4.jpg",
       "title": "Youcef Khalef",
       "sub": "Design Section Lead, Morning AI"
+    },    
+    {
+      "id": 5,
+      "image": "/img/team/5.jpg",
+      "title": "Walid Abbes",
+      "sub": "Web Developer, Morning AI"
+    },   
+    {
+      "id": 6,
+      "image": "/img/team/6.jpg",
+      "title": "Moncef Korichi",
+      "sub": "Web Developer, Morning AI"
     }
   ],
   "skills": [
