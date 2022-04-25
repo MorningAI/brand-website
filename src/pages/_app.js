@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         <title>Morning AI™</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
-      <Cursor />
+     
   
       <Component {...pageProps} />
       <ScrollToTop />
