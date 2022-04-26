@@ -1254,9 +1254,7 @@ background: linear-gradient(to left, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Fi
 
 /* ====================== [ End Text Animation & Images ] ====================== */
 /* ====================== [ Start Cursor Style ] ====================== */
-body {
-  cursor: none;
-}
+
 
 .mouse-cursor {
   position: fixed;
