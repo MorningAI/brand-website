@@ -1,112 +1,111 @@
 const particlesConfig = JSON.parse(`{
-  "background": {
-    "color": {
-      "value": "transparent"
+  "particles": {
+    "number": {
+      "value": 300,
+      "density": {
+        "enable": true,
+        "value_area": 1041.5665160401252
+      }
     },
-    "image": "url('/img/nyancat-animated.gif')",
-    "position": "-30% 85%",
-    "repeat": "no-repeat",
-    "size": "60%"
-  },
-  "fullScreen": {
-    "zIndex": 1
+    "color": {
+      "value": "#202020"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 29.214850882531977,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
   },
   "interactivity": {
+    "detect_on": "canvas",
     "events": {
-      "onClick": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
         "enable": true,
         "mode": "repulse"
       },
-      "onHover": {
-        "mode": "grab"
-      }
+      "resize": true
     },
     "modes": {
-      "bubble": {
+      "grab": {
         "distance": 400,
-        "duration": 2,
-        "opacity": 8,
-        "size": 40,
-        "divs": {
-          "distance": 200,
-          "duration": 0.4,
-          "mix": false,
-          "selectors": []
+        "line_linked": {
+          "opacity": 1
         }
       },
-      "grab": {
-        "distance": 200
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
       },
       "repulse": {
-        "divs": {
-          "distance": 200,
-          "duration": 0.4,
-          "factor": 100,
-          "speed": 1,
-          "maxSpeed": 50,
-          "easing": "ease-out-quad",
-          "selectors": []
-        }
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
       }
     }
   },
-  "particles": {
-    "color": {
-      "value": "#000"
-    },
-    "links": {
-      "color": {
-        "value": "#000"
-      },
-      "distance": 150,
-      "opacity": 0.4
-    },
-    "move": {
-      "attract": {
-        "rotate": {
-          "x": 600,
-          "y": 1200
-        }
-      },
-      "direction": "left",
-      "enable": true,
-      "outModes": {
-        "bottom": "out",
-        "left": "out",
-        "right": "out",
-        "top": "out"
-      },
-      "speed": 6,
-      "straight": true
-    },
-    "opacity": {
-      "value": 0.5,
-      "animation": {
-        "speed": 1,
-        "minimumValue": 0.1
-      }
-    },
-    "shape": {
-      "options": {
-        "star": {
-          "sides": 5
-        }
-      },
-      "type": "star"
-    },
-    "size": {
-      "random": {
-        "enable": true
-      },
-      "value": {
-        "min": 1,
-        "max": 4
-      },
-      "animation": {
-        "speed": 40,
-        "minimumValue": 0.1
-      }
-    }
-  }
+  "retina_detect": true
 }`)
 export default particlesConfig;

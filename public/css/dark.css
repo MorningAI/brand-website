@@ -1,13 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Vie
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: ThemesCamp
-    Author URI: http://themeforest.net/user/ThemesCamp
-    Version: 1.2
-
------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
 
 == Table Of Content
@@ -1897,7 +1888,7 @@ background: linear-gradient(to top, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Fir
 }
 
 .navbar .logo {
-  width: 40px;
+  width: 155px;
 }
 
 .nav-scroll {
@@ -8099,7 +8090,7 @@ footer .item .logo {
 }
 
 footer .item .logo img {
-  width: 50px;
+  width: 155px;
 }
 
 footer .item .social a {

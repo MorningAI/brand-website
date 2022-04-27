@@ -29,7 +29,7 @@ const Works3 = () => {
                   Our Work
                 </h6>
                 <h3 className="wow color-font">
-                  Our Recent Projects <br/> Seeking for a better tomorrow.
+                  Our Recent Projects
                 </h3>
               </div>
             </div>

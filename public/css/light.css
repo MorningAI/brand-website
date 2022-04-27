@@ -1917,7 +1917,7 @@ background: linear-gradient(to left, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Fi
 }
 
 .navbar .logo {
-  width: 40px;
+  width: 155px;
 }
 
 .nav-scroll {
@@ -8081,7 +8081,7 @@ footer .item .logo {
 }
 
 footer .item .logo img {
-  width: 50px;
+  width: 155px;
 }
 
 footer .item .social a {

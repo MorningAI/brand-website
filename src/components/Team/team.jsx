@@ -48,6 +48,7 @@ const Team = () => {
                   <div className="full-width">
                     {teamsDate.teams.slice(0, 3).map((team, index) => (
                       <div key={team.id}>
+
                         <div
                           className={`img sizxl ${
                             index + 1 != teamsDate.teams.slice(0, 3).length
@@ -57,7 +58,10 @@ const Team = () => {
                           data-tooltip-tit={team.title}
                           data-tooltip-sub={team.sub}
                         >
-                          <img src={team.image} alt="" className="imago wow" />
+                          <a href={team.linkedin}>
+
+                          <img src={team.image} alt="" className="imago wow" /></a>
+                          
                         </div>
                       </div>
                     ))}

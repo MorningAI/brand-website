@@ -61,7 +61,7 @@ const Services3 = () => {
               </span>
               <h5>Software development</h5>
               <p>
-              Plan tailored software solutions for you to achieve operational excellence and deliver them fast and error-free. 
+              Plan tailored software solutions to achieve operational excellence and deliver them fast and error-free. 
               </p>
               <Link href="/about/">
                 <a className="more-stroke">

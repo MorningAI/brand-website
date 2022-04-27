@@ -18,14 +18,14 @@ const MinimalArea2 = () => {
             <div className="img">
               <img
                 className="thumparallax-down"
-                src="/img/min-area.jpg"
+                src="/img/min-area.png"
                 alt=""
               />
             </div>
           </div>
           <div className="col-lg-6 valign">
             <div className="content">
-              <h4 className="color-font">Imgine. Plannify. Create.</h4>
+              <h4 className="color-font">Imagine. Plannify. Create.</h4>
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
                 We help companies integrate smart and creative solutions into their businesses. 
