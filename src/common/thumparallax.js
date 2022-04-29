@@ -13,7 +13,7 @@ export const thumparallaxDown = () => {
     new simpleParallax(imageDown, {
       orientation: "down",
       delay: 1,
-      scale: 1.1,
+      scale: 1,
     });
   }
 };

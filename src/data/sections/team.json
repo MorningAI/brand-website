@@ -5,25 +5,29 @@
       "image": "/img/team/1.jpg",
       "title": "Samy Benmahrez",
       "sub": "President/ Product Designer, Morning AI",
-      "linkedin": "www.linkedin.com/in/samy-ben"
+      "linkedin": "https://www.linkedin.com/in/samy-ben/"
     },
     {
       "id": 2,
-      "image": "/img/team/2.jpg",
-      "title": "Mohamed Aissaoui",
-      "sub": "Vice President/Marketing Director, Morning AI"
+      "image": "/img/team/yasser.jpg",
+      "title": "Yasser Cherfaoui",
+      "sub": "Development Section Lead, Morning AI",
+      "linkedin":"https://www.linkedin.com/in/yassercherfaoui/"
+
     },
     {
       "id": 3,
-      "image": "/img/team/3.jpg",
-      "title": "Yasser Cherfaoui",
-      "sub": "Development Section Lead, Morning AI"
+      "image": "/img/team/2.jpg",
+      "title": "Mohamed Aissaoui",
+      "sub": "Vice President/Marketing Director, Morning AI",
+      "linkedin":"https://www.linkedin.com/in/mohamed-aissaoui-72737822b/"
     },
     {
       "id": 4,
       "image": "/img/team/4.jpg",
       "title": "Youcef Khalef",
-      "sub": "Design Section Lead, Morning AI"
+      "sub": "Design Section Lead, Morning AI",
+      "linkedin":"https://www.linkedin.com/in/youcef-khalef-2b7062239/"
     },    
     {
       "id": 5,

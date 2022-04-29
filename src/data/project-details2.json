@@ -1,59 +1,40 @@
+
 {
   "id": 1,
-  "title": { "small": "art & illustration", "big": "Inspiring new space." },
+  "title": { "small": "Software Development", "big": "Supplier management software" },
   "clientURLLink": "#",
   "projectHeaderImage": "/img/portfolio/project2/bg.jpg",
-  "videoLink": "https://vimeo.com/127203262",
-  "clientURLName": "Envato.com",
+  "videoLink": "",
+  "clientURLName": "",
   "date": "6 August 2022",
   "categories": [
     {
       "id": 1,
-      "name": "Web Design",
-      "link": "#"
-    },
-    {
-      "id": 2,
-      "name": "WordPress",
+      "name": "SOFTWARE DEVELOPMENT",
       "link": "#"
     }
   ],
   "tags": [
     {
       "id": 1,
-      "name": "Minimal",
+      "name": "LOGISTICS",
       "link": "#"
     },
     {
       "id": 2,
-      "name": "Modern",
+      "name": "PLANNING",
       "link": "#"
     },
     {
       "id": 3,
-      "name": "Design",
+      "name": "SUPPLIERS",
       "link": "#"
     }
   ],
   "intro": {
-    "content": "We are a Creative Agency & Startup Studio that provides Digital Products and Services turns to focus on client success. We specialize in user interface design, including front-end development which we consider to be an integral part.",
+    "content": "Bimo’s supplier management software is a software developed for Bimo company managers, its main function is to help the user visualise all data and information about suppliers, supplies and purchases.",
     "spmList": [
-      {
-        "id": 1,
-        "name": "Aenean sollicitudin"
-      },
-      {
-        "id": 2,
-        "name": "lorem quis bibendum auctor"
-      },
-      {
-        "id": 31,
-        "name": "nisi elit conseq uat ipsum"
-      },
-      {
-        "id": 4,
-        "name": "nec sagittis sem nibh id elit"
-      }
+
     ]
   },
   "gallery": [
@@ -64,6 +45,6 @@
     "/img/portfolio/project2/7.jpg"
   ],
   "description": {
-    "content": "We are a Creative Agency & Startup Studio that provides Digital Products and Services turns to focus on client success. We specialize in user interface design, including front-end development which we consider to be an integral part."
+    "content": "Regardless of the time and the number of tasks this software can save for you, it will be much easier for you to make decisions. By visualising data in an organised form, this software is a decision-making support tool. It gives you clear and filtered information about supplies such as financial history and many more. "
   }
 }
