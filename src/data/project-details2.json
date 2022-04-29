@@ -1,4 +1,53 @@
+[
+{
+  "id": 0,
+  "title": { "small": "Software Development", "big": "Supplier management software" },
+  "clientURLLink": "#",
+  "projectHeaderImage": "/img/portfolio/project2/bg.jpg",
+  "videoLink": "",
+  "clientURLName": "",
+  "date": "6 August 2022",
+  "categories": [
+    {
+      "id": 1,
+      "name": "SOFTWARE DEVELOPMENT",
+      "link": "#"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "LOGISTICS",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "name": "PLANNING",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "name": "SUPPLIERS",
+      "link": "#"
+    }
+  ],
+  "intro": {
+    "content": "Bimo’s supplier management software is a software developed for Bimo company managers, its main function is to help the user visualise all data and information about suppliers, supplies and purchases.",
+    "spmList": [
 
+    ]
+  },
+  "gallery": [
+    "/img/portfolio/project2/1.jpg",
+    "/img/portfolio/project2/2.jpg",
+    "/img/portfolio/project2/3.jpg",
+    "/img/portfolio/project2/5.jpg",
+    "/img/portfolio/project2/7.jpg"
+  ],
+  "description": {
+    "content": "Regardless of the time and the number of tasks this software can save for you, it will be much easier for you to make decisions. By visualising data in an organised form, this software is a decision-making support tool. It gives you clear and filtered information about supplies such as financial history and many more. "
+  }
+},
 {
   "id": 1,
   "title": { "small": "Software Development", "big": "Supplier management software" },
@@ -48,3 +97,4 @@
     "content": "Regardless of the time and the number of tasks this software can save for you, it will be much easier for you to make decisions. By visualising data in an organised form, this software is a decision-making support tool. It gives you clear and filtered information about supplies such as financial history and many more. "
   }
 }
+]

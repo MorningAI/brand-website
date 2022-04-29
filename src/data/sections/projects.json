@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "class": "graphic",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "Creativity Demand",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    },
+    {
+        "id": 1,
+        "class": "web",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "Through The Breaking",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    },
+    {
+        "id": 2,
+        "class": "brand",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "Create With Creatives",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    },
+    {
+        "id": 3,
+        "class": "graphic",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "Energies of Love",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    },
+    {
+        "id": 4,
+        "class": "web",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "See It Yourself",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    },
+    {
+        "id": 5,
+        "class": "brand",
+        "cover_image": "/img/portfolio/portfolio/1/1.jpg",
+        "title": "Blast From The Past",
+        "tags": ["Design","WordPress"],
+        "url": "/project-details2/project-details2-dark"
+    }
+ 
+]
