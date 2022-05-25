@@ -38,8 +38,8 @@ const ProjectDetails2Dark = () => {
         <ProjectIntroduction projectIntroductionData={ProjectDate.intro} />
         <ProjectGallery />
         <ProjectDescription projectDescriptionData={ProjectDate.description} />
-        <ProjectVideo projectVideoDate={ProjectDate} />
-        <NextProject />
+{/*         <ProjectVideo projectVideoDate={ProjectDate} />
+        <NextProject /> */}
         <Footer />
       </div>
     </DarkTheme>

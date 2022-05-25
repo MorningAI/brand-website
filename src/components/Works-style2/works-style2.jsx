@@ -58,7 +58,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition,data }) => {
                   All
                 </span>
                 <span data-filter=".brand">Branding</span>
-                <span data-filter=".web">Mobile App</span>
+                <span data-filter=".dev">Development</span>
                 <span data-filter=".graphic">Creative</span>
               </div>
             </div>

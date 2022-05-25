@@ -20,22 +20,23 @@ const Footer = ({ hideBGCOLOR }) => {
                 <li>
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
-                    <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
+                    <h6>Address</h6>
+                    <p>Algiers, Algeria</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
                     <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
+                    <p>ai.morning2021@gmail.com</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Call Us</h6>
-                    <p>+87986451666</p>
+                    <p>+213781799991
+</p>
                   </div>
                 </li>
               </ul>
@@ -67,12 +68,12 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-                <a href="#0">
+{/*                 <a href="#0">
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a href="#0">
                   <i className="fab fa-twitter"></i>
-                </a>
+                </a> */}
                 <a href="https://www.instagram.com/morning_ai_">
                   <i className="fab fa-instagram"></i>
                 </a>
@@ -81,7 +82,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 <p>
                   © 2022 Made with <i class="icon ion-heart"></i> By Our Team at 
                   <Link
-                    href=""
+                    href="/"
                     
                   >
                     <a target="_blank"> Morning AI </a>

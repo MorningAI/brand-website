@@ -2,7 +2,7 @@
   "teams": [
     {
       "id": 1,
-      "image": "/img/team/1.jpg",
+      "image": "/img/team/samy.png",
       "title": "Samy Benmahrez",
       "sub": "President/ Product Designer, Morning AI",
       "linkedin": "https://www.linkedin.com/in/samy-ben/"
@@ -17,27 +17,27 @@
     },
     {
       "id": 3,
-      "image": "/img/team/2.jpg",
+      "image": "/img/team/mohamed.png",
       "title": "Mohamed Aissaoui",
       "sub": "Vice President/Marketing Director, Morning AI",
       "linkedin":"https://www.linkedin.com/in/mohamed-aissaoui-72737822b/"
     },
     {
       "id": 4,
-      "image": "/img/team/4.jpg",
+      "image": "/img/team/youcef.png",
       "title": "Youcef Khalef",
       "sub": "Design Section Lead, Morning AI",
       "linkedin":"https://www.linkedin.com/in/youcef-khalef-2b7062239/"
     },    
     {
       "id": 5,
-      "image": "/img/team/2.jpg",
+      "image": "/img/team/walid.png",
       "title": "Walid Abbes",
       "sub": "Web Developer, Morning AI"
     },   
     {
       "id": 6,
-      "image": "/img/team/4.jpg",
+      "image": "/img/team/moncef.png",
       "title": "Moncef Korichi",
       "sub": "Web Developer, Morning AI"
     }
@@ -45,7 +45,7 @@
   "skills": [
     {
       "id": 1,
-      "text": "UI / UX Design",
+      "text": "UX / UI Design",
       "value": "95%"
     },
     {

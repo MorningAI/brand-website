@@ -37,7 +37,6 @@ const Homepage5 = () => {
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
       <Intro4  />
       <AboutUs3 />
-      <Works3 />
       <Services3 />
       <MinimalArea2 />
       <Team />

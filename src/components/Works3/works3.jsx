@@ -94,7 +94,7 @@ const Works3 = () => {
                       <div className="img">
                         <span className="imgio">
                           <span className="wow cimgio" data-delay="500"></span>
-                          <img src="/img/portfolio/2.jpg" alt="" />
+                          <img src="/img/portfolio/Bimo/01.png" alt="" />
                         </span>
                       </div>
                       <div className="cont">
@@ -115,7 +115,7 @@ const Works3 = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
@@ -140,8 +140,8 @@ const Works3 = () => {
                         </h4>
                       </div>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
@@ -166,8 +166,8 @@ const Works3 = () => {
                         </h4>
                       </div>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
@@ -192,8 +192,8 @@ const Works3 = () => {
                         </h4>
                       </div>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
@@ -218,8 +218,8 @@ const Works3 = () => {
                         </h4>
                       </div>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
@@ -244,7 +244,7 @@ const Works3 = () => {
                         </h4>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                 </Swiper>
 
                 <div

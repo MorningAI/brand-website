@@ -30,7 +30,7 @@ const BlogGridDark = () => {
         navbar.classList.remove("nav-scroll");
       }
     });
-    fetch('https://dev.to/api/articles?username=yassercherfaoui')
+    fetch('https://dev.to/api/articles?username=samcodesign')
     .then((res) => res.json())
     .then((data) => {
       setData(data)
