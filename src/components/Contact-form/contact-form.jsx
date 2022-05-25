@@ -115,12 +115,12 @@ const ContactForm = () => {
                 <a href="https://www.instagram.com/morning_ai_/" className="icon">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#0" className="icon">
+{/*                 <a href="#0" className="icon">
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#0" className="icon">
                   <i className="fab fa-linkedin"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
