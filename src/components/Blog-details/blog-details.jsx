@@ -46,23 +46,7 @@ const BlogDetails = ({ theme,post }) => {
                        {/* <div dangerouslySetInnerHTML={{ __html: post.body_html }}></div> */}
                        
                 
-                      <div className="share-info">
-                        <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-behance"></i>
-                          </a>
-                        </div>
-                        <div className="tags">
-                          <a href="#0">Web</a>,<a href="#0">Themeforest</a>,
-                          <a href="#0">ThemesCamp</a>
-                        </div>
-                      </div>
+
                     </div>
                                       </div>
                 </div>
@@ -73,7 +57,7 @@ const BlogDetails = ({ theme,post }) => {
                   <a href="#0">Prev Post</a>
                 </span>
                 <span className="icon">
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/blog`}>
                     <a>
                       <i className="fas fa-th-large"></i>
                     </a>

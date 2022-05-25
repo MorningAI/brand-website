@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/footer";
 
 export const getStaticPaths = async () => {
   const res = await fetch('https://dev.to/api/articles/me/published', {'headers':{
-    'api-key': 'bEhXQgJ5UejspdZxFy7EhhVe'
+    'api-key': 'qfTdvkmUyqPEjYC5CdaDBfw2'
   }});
   const data = await res.json();
   
