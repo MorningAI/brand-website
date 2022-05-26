@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/navbar";
 import BlogGrid from "../components/Blog-grid/blog-grid.jsx";
 import PageHeader from "../components/Page-header/page-header";
 import Footer from "../components/Footer/footer";
+import Script from "next/script";
 
 
 const BlogGridDark = () => {
@@ -56,7 +57,7 @@ const BlogGridDark = () => {
       />
       <BlogGrid blogs={data} />
       <Footer />
-      <script src="/common/displayRows.js"></script>
+      <Script src="/common/displayRows.js"></Script>
     </DarkTheme>
   );
 };

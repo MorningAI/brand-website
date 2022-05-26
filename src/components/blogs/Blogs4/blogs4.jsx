@@ -97,8 +97,8 @@ const Blogs4 = () => {
                   className="swiper-wrapper swiper-container swiper-img"
                   slidesPerView={1}
                 >
-                  {data.map(blogItem=>(
-                    <SwiperSlide className="swiper-slide">
+                  {data.map((blogItem,i)=>(
+                    <SwiperSlide key={i} className="swiper-slide">
                     <div className="item wow fadeIn" data-wow-delay=".3s">
                       <div className="img">
                         <img
@@ -162,8 +162,8 @@ const Blogs4 = () => {
                   className="swiper-wrapper swiper-container swiper-content"
                   slidesPerView={1}
                 >
-                 {data.map((blogItem)=>(
-                   <SwiperSlide className="swiper-slide">
+                 {data.map((blogItem,i)=>(
+                   <SwiperSlide key={i} className="swiper-slide">
                    <div className="item wow fadeIn" data-wow-delay=".6s">
                      <div className="content">
                        <div className="tags">

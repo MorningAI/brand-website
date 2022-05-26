@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 
 const Footer = ({ hideBGCOLOR }) => {
   const router = useRouter()
-  console.log(router.pathname.split("/"));
+  
   return (
     <footer className={`${!hideBGCOLOR ? "sub-bg" : ""}`}>
       <div className="container">
@@ -49,16 +49,16 @@ const Footer = ({ hideBGCOLOR }) => {
               </div>
               <ul>
                 <li  className={router.pathname == "/" ? "link-is-active" : ""}>
-                 <a href="/">Home</a>
+                 <Link href="/">Home</Link>
                 </li>
                 <li className={router.pathname == "/about" ? "link-is-active" : ""}>
-                  <a href="/about">About</a>
+                  <Link href="/about">About</Link>
                 </li>
                 <li className={router.pathname == "/our-projects" ? "link-is-active" : ""}>
-                <a href="/our-projects">Works</a>
+                <Link href="/our-projects">Works</Link>
                 </li>
-                <li className={router.pathname == "/blog" ? "link-is-active" : ""}><a href="/blog">Blog</a></li>
-                <li className={router.pathname == "/contact" ? "link-is-active" : ""}><a href="/contact">Contact</a></li>
+                <li className={router.pathname == "/blog" ? "link-is-active" : ""}><Link href="/blog">Blog</Link></li>
+                <li className={router.pathname == "/contact" ? "link-is-active" : ""}><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
           </div>
@@ -68,24 +68,23 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-{/*                 <a href="#0">
+{/*                 <Link href="#0">
                   <i className="fab fa-linkedin"></i>
-                </a>
-                <a href="#0">
+                </Link>
+                <Link href="#0">
                   <i className="fab fa-twitter"></i>
-                </a> */}
-                <a href="https://www.instagram.com/morning_ai_">
+                </Link> */}
+                <Link href="https://www.instagram.com/morning_ai_">
                   <i className="fab fa-instagram"></i>
-                </a>
+                </Link>
               </div>
               <div className="copy-right">
                 <p>
-                  © 2022 Made with <i class="icon ion-heart"></i> By Our Team at 
+                  © 2022 Made with <i className="icon ion-heart"></i> By Our Team at 
                   <Link
-                    href="/"
-                    
+                    href="/"                    
                   >
-                    <a target="_blank"> Morning AI </a>
+                   Morning AI
                   </Link>
                   .
                 </p>

@@ -88,7 +88,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition,data }) => {
               <div className="cont">
                 <h6>{el.title} </h6>
                 <span>
-                  {el.tags.map(tag=>(<Link href="/works3/works3-dark">{tag}</Link>))}
+                  {el.tags.map((tag,i)=>(<Link key={i} href="/works3/works3-dark">{tag}</Link>))}
     
                 </span>
               </div>
