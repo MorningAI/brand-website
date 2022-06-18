@@ -13,7 +13,7 @@ const ContactForm = () => {
     }
     return error;
   }
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
+  const sendMessage = (ms) => console.log(ms);;
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -28,7 +28,7 @@ const ContactForm = () => {
                   message: "",
                 }}
                 onSubmit={async (values) => {
-                  await sendMessage(500);
+                  await sendMessage(JSON.stringify(values, null, 2));
                   alert(JSON.stringify(values, null, 2));
                   // show message
 
