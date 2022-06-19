@@ -4,6 +4,11 @@ import Navbar from "../../components/Navbar/navbar";
 import BlogDetails from "../../components/Blog-details/blog-details";
 import PageHeader from "../../components/Page-header/page-header";
 import Footer from "../../components/Footer/footer";
+import hljs from 'highlight.js';
+import javascript from 'highlight.js/lib/languages/javascript';
+hljs.registerLanguage('javascript', javascript);
+import python from 'highlight.js/lib/languages/python';
+hljs.registerLanguage('python', python);
 
 export const getStaticPaths = async () => {
   const res = await fetch('https://dev.to/api/articles/me/published', {'headers':{
@@ -42,6 +47,7 @@ const BlogDetailsDark = ({post}) => {
  
 
   React.useEffect(() => {
+    hljs.initHighlighting();
     
     var navbar = navbarRef.current,
       logo = logoRef.current;

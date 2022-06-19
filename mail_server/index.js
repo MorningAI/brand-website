@@ -6,11 +6,8 @@ const creds = require('./config');
 
 var transport = {
     
-    host: 'smtp.mail.yahoo.com', 
+    host: 'mail.morningai.net', 
     port: 465,
-    secure:false,
-    logger:true,
-    debug: false,
     auth: {
     user: creds.USER,
     pass: creds.PASS
@@ -32,23 +29,26 @@ router.post('/send', (req, res, next) => {
   var email = req.body.email
   var message = req.body.message
   var content = `name: ${name} \n email: ${email} \n message: ${message} `
-
+  console.log(content);
   var mail = {
-    from: name,
-    to: 'y_cherfaoui@enst.dz',  // Change to email address that you want to receive messages on
+    from: email,
+    to: 'contact@morningai.net',  // Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
     text: content
   }
 
   transporter.sendMail(mail, (err, data) => {
+    console.log(data);
     if (err) {
       res.json({
         status: 'fail'
       })
     } else {
       res.json({
-       status: 'success'
+        status: 'success'
       })
+      console.log("email sent");
+      
     }
   })
 })

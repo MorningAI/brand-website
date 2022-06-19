@@ -12,6 +12,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Morning AI™</title>
         <link rel="icon" href="/img/favicon.ico" />
+        <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
       </Head>
  
   

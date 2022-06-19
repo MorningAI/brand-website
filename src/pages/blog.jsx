@@ -15,7 +15,6 @@ const BlogGridDark = () => {
   const [isLoading, setLoading] = React.useState(false)
   React.useEffect(() => {
     setLoading(true)
-  
     
     var navbar = navbarRef.current,
       logo = logoRef.current;

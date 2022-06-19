@@ -13,7 +13,28 @@ const ContactForm = () => {
     }
     return error;
   }
-  const sendMessage = (ms) => console.log(ms);;
+  const sendMessage = (ms) => {
+    
+    console.log("submit send");
+
+    fetch('http://localhost:3002/send', {
+        method: "POST",
+        body: ms,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then(
+      (response) => (response.json())
+        ).then((response)=> {
+      if (response.status === 'success') {
+        messageRef.current.innerText =
+        "Your Message has been successfully sent. I will contact you soon.";
+      } else if(response.status === 'fail') {
+        
+      }
+    })
+  }
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -28,12 +49,14 @@ const ContactForm = () => {
                   message: "",
                 }}
                 onSubmit={async (values) => {
+                 
                   await sendMessage(JSON.stringify(values, null, 2));
-                  alert(JSON.stringify(values, null, 2));
+           
+
+                 
                   // show message
 
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
+                  
                   // Reset the values
                   values.name = "";
                   values.email = "";
