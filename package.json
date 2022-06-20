@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.5",
     "axios": "^0.25.0",
     "formik": "^2.2.9",
     "next": "12.1.0",

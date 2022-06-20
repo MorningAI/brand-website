@@ -78,7 +78,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </span>
               
             </li>
-            <li className="nav-item dropdown" >
+            {/* <li className="nav-item dropdown" >
               <span
                 className="nav-link "
                 data-toggle="dropdown"
@@ -91,7 +91,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 </Link>
               </span>
               
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href={`/contact`}>
                 <a className="nav-link">Contact</a>

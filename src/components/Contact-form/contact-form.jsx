@@ -1,9 +1,13 @@
 import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
 import { Formik, Form, Field } from "formik";
-
+import { useForm, ValidationError } from '@formspree/react';
 const ContactForm = () => {
   const messageRef = React.useRef(null);
+  const [state, handleSubmit] = useForm("meqnweog");
+  if(state.succeeded) {
+    messageRef.current.innerText = "Your Message has been successfully sent. I will contact you soon.";  
+  }
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -29,7 +33,7 @@ const ContactForm = () => {
         ).then((response)=> {
       if (response.status === 'success') {
         messageRef.current.innerText =
-        "Your Message has been successfully sent. I will contact you soon.";
+        "Your Message has been successfully sent. I will contact you soon.";  
       } else if(response.status === 'fail') {
         
       }
@@ -48,24 +52,18 @@ const ContactForm = () => {
                   email: "",
                   message: "",
                 }}
-                onSubmit={async (values) => {
-                 
-                  await sendMessage(JSON.stringify(values, null, 2));
-           
-
-                 
-                  // show message
-
-                  
-                  // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = ''
-                  }, 2000)
-                }}
+                onSubmit={
+                  async (values) => {
+                    await handleSubmit(values);
+                    values.name = "";
+                    values.email = "";
+                    values.message = "";
+                    setTimeout(()=>{
+                      messageRef.current.innerText = '';
+                    },2000)
+                  }
+                
+              }
               >
                 {({ errors, touched }) => (
                   <Form id="contact-form">

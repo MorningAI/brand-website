@@ -40,7 +40,7 @@ const Homepage5 = () => {
       <Services3 />
       <MinimalArea2 />
       <Team />
-      <Blogs4 />
+      {/* <Blogs4 /> */}
       <CallToAction />
       <Footer />
     </LightTheme>

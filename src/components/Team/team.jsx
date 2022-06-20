@@ -41,7 +41,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-1">
+          {/* <div className="col-lg-6 offset-lg-1">
             <div className="img-box">
               <div className="row">
                 <div className="col-sm-6 toright">
@@ -86,28 +86,10 @@ const Team = () => {
                     ))}
                   </div>
                 </div>
-                {/* <div className="col-sm-6 toleft valign rowlik">
-                  <div className="full-width text-left">
-                    {teamsDate.teams.slice(4,6).map((team, index) => (
-                      <div key={team.id}>
-                        <div
-                          className={`img sizxl ${
-                            index + 1 != teamsDate.teams.slice(4, 6).length
-                              ? "mb-30"
-                              : null
-                          }`}
-                          data-tooltip-tit={team.title}
-                          data-tooltip-sub={team.sub}
-                        >
-                          <img src={team.image} alt="" className="imago wow" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
+            
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
