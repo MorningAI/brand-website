@@ -2,3 +2,4 @@ node_modules/
 .next/
 testing.js
 src/common/displayRows.js
+out/
