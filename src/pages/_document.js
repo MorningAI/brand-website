@@ -15,11 +15,11 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="HTML5 Template Vie onepage themeforest"
+            content="MorningAI Branding UI UX Design Web Mobile"
           />
           <meta
             name="description"
-            content="Vie - Onepage Multi-Purpose HTML5 Template"
+            content="We develop creative and smart digital solutions in different domains such as software development, user interface and digital marketing."
           />
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/img/favicon.ico" />
